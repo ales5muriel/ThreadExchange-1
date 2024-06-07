@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/recyclerFragment"
+        android:icon="@drawable/baseline_videogame_asset_24"
+        android:title="@string/lista"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/favItemListFragment2"
+        android:icon="@drawable/baseline_favorite_24"
+        android:title="@string/Favoritos"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/userInfoFragment2"
+        android:icon="@drawable/baseline_perm_contact_calendar_24"
+        android:title="@string/Usuarios"
+        app:showAsAction="ifRoom"/>
+
+
+</menu>
