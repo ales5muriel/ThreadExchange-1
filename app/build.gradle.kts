@@ -43,6 +43,8 @@ android {
 dependencies {
     val nav_version="2.7.0"
     implementation ("com.google.android.material:material:1.8.0")
+    implementation ("com.google.android.material:material:1.4.0")
+
     // Preferences DataStore (SharedPreferences like APIs)
     dependencies {
         implementation("androidx.datastore:datastore-preferences:1.0.0")

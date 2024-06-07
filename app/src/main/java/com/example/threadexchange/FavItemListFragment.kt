@@ -20,7 +20,7 @@ class FavItemListFragment : Fragment() {
         _binding = FragmentFavItemListBinding.inflate(inflater, container, false)
         val root: View = binding.root
         binding.btnMenu.setOnClickListener {
-            findNavController().navigate(R.id.action_favItemListFragment2_to_userInfoFragment2)
+            findNavController().navigate(R.id.action_favItemListFragment2_to_recyclerFragment)
         }
         return root
     }

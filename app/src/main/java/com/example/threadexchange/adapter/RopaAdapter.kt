@@ -28,5 +28,7 @@ class RopaAdapter(private val listRopa: List<Ropa>, private val onClickListener:
             it.findNavController().navigate(R.id.action_recyclerFragment_to_detailItemFragment3, bundle)
 
         }
+
     }
+
 }

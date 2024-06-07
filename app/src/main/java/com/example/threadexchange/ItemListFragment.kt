@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.threadexchange.adapter.RopaAdapter
 import com.example.threadexchange.databinding.FragmentItemListBinding
@@ -39,7 +38,7 @@ class ItemListFragment : Fragment() {
         val bundle = Bundle().apply {
             putString("juegoNombre", datos.Nombre)
             putString("juegoMarca", datos.Marca)
-            putString("juegoTamano", datos.Tamano)
+            putString("juegoTamano", datos.Talla)
             putString("juegoFoto", datos.foto)
         }
        // findNavController().navigate(R.id.action_itemListFragment_to_detailItemFragment, bundle)

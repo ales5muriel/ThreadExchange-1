@@ -40,11 +40,6 @@
     </fragment>
 
     <fragment
-        android:id="@+id/itemListFragment"
-        android:name="com.example.threadexchange.ItemListFragment"
-        android:label="fragment_item_list"
-        tools:layout="@layout/fragment_item_list" />
-    <fragment
         android:id="@+id/recyclerFragment"
         android:name="com.example.threadexchange.RecyclerFragment"
         android:label="fragment_recycler"
@@ -58,6 +53,9 @@
         <action
             android:id="@+id/action_recyclerFragment_to_detailItemFragment3"
             app:destination="@id/detailItemFragment" />
+        <action
+            android:id="@+id/action_recyclerFragment_to_favItemListFragment2"
+            app:destination="@id/favItemListFragment2" />
     </fragment>
     <fragment
         android:id="@+id/detailItemFragment"
@@ -88,6 +86,9 @@
         <action
             android:id="@+id/action_favItemListFragment2_to_userInfoFragment2"
             app:destination="@id/userInfoFragment2" />
+        <action
+            android:id="@+id/action_favItemListFragment2_to_recyclerFragment"
+            app:destination="@id/recyclerFragment" />
     </fragment>
     <fragment
         android:id="@+id/creditFragment"

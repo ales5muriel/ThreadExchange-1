@@ -11,6 +11,7 @@
     <string name="item_list_title"> Ropa </string>
     <string name="salir"> Salir </string>
     <string name="Descripcion"> Descripcion </string>
+    <string name="agregar_comentario_desc">Agregar comentario privado</string>
     <string name="textoCP"> Durante más de 50 años, la marca ha seguido encabezando la hibridación insignia de modelos de archivo militares, de trabajo y deportivos, combinándolos con la innovación textil italiana. </string>
     <string name="item_list_fav"> Prendas y Articulos Favoritos </string>
     <string name="Creditos">Ir a creditos</string>
@@ -27,4 +28,6 @@
     <string name="user_info_title">Información Usuario</string>
     <string name="Favoritos">Favoritos</string>
     <string name="Usuarios">Usuarios</string>
+    <string name="descripcion_favoritos">Agregar a favoritos</string>
+
 </resources>

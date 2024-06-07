@@ -23,10 +23,11 @@ class RopaViewHolder(view: View) : RecyclerView.ViewHolder(view){
     fun render(RopaModel: Ropa, onClickListener: (Ropa) -> Unit){
         Nombre.text = RopaModel.Nombre
         Marca.text = RopaModel.Marca
-        Tamano.text = RopaModel.Tamano
+        Tamano.text = RopaModel.Talla
         Glide.with(itemView.context).load(RopaModel.foto).into(foto)
 
     }
+
 
 
 }

@@ -29,7 +29,7 @@ class DetailFavItemFragment : Fragment() {
             }
             binding.tvEquipoName.text=Ropa.Nombre
             binding.tvEquipoLiga.text=Ropa.Marca
-            binding.tvEquipoEstadio.text=Ropa.Tamano
+            binding.tvEquipoEstadio.text=Ropa.Talla
             Glide.with(binding.ivEquipo.context).load(Ropa.foto).into(binding.ivEquipo)
 
         }

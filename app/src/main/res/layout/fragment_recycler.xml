@@ -18,6 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+
     <!-- LinearLayout para contener los botones en la parte inferior -->
     <LinearLayout
         android:id="@+id/buttonLayout"
@@ -32,6 +33,7 @@
 
         <!-- Botón Favoritos -->
         <com.google.android.material.button.MaterialButton
+
             android:id="@+id/btnFavoritos"
             style="@style/AppButtonStyle"
             android:layout_width="0dp"
@@ -40,6 +42,7 @@
             android:layout_margin="8dp"
             android:text="@string/favoritos"
             android:icon="@drawable/fav" />
+
 
         <!-- Botón Volver -->
         <com.google.android.material.button.MaterialButton

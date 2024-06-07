@@ -29,9 +29,10 @@ private var _binding: FragmentRecyclerBinding? = null
 
         }
         binding.btnFavoritos.setOnClickListener {
-          //  findNavController().navigate(R.id.action_recyclerFragment_to_detailItemFragment)
+            findNavController().navigate(R.id.action_recyclerFragment_to_favItemListFragment2)
 
         }
+
         binding.btnPerfil.setOnClickListener {
             findNavController().navigate(R.id.action_recyclerFragment_to_userInfoFragment2)
         }
@@ -58,6 +59,10 @@ private var _binding: FragmentRecyclerBinding? = null
             Ropa.Nombre,
             Toast.LENGTH_SHORT
         ).show()
+    }
+    private fun agregarAFavoritos(Ropa: Ropa) {
+        FavoritosManager.agregarAFavoritos(Ropa)
+        Toast.makeText(requireContext(), "${Ropa.Nombre} agregado a favoritos", Toast.LENGTH_SHORT).show()
     }
     override fun onDestroyView() {
         super.onDestroyView()
