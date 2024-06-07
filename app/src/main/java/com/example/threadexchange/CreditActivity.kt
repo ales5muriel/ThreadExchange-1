@@ -8,26 +8,21 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class CreditActivity : AppCompatActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_credit)
-
         // Obtener una referencia al TextView en el layout
         val tvInfo = findViewById<TextView>(R.id.tvMessage)
-
         // Recoger el nombre de la aplicación del intent
         val nombreUsuario = intent.getStringExtra("nombre")
         // Crear la cadena del saludo
         tvInfo.text = getString(R.string.info,nombreUsuario)
-
         // Configurar el botón de contacto
         val contactarButton: Button = findViewById(R.id.Contactar)
         contactarButton.setOnClickListener {
             enviarCorreoConsulta(nombreUsuario)
         }
     }
-
     private fun enviarCorreoConsulta(nombreApp: String?) {
         val direccionCorreo = "tudirecciondecorreo@example.com"
         val asunto = "Consulta de la app $nombreApp"

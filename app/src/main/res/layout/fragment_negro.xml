@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".FragmentNegro">
+
+    <!-- Añade una imagen para representar la aplicación -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        android:scaleType="center"/>
+
+    <!-- Añade un contenedor para el texto -->
+    <LinearLayout
+        android:id="@+id/textContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/imageView"
+        android:padding="16dp">
+
+        <!-- Texto de descripción -->
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thread Exchange es más que una aplicación; es un portal dinámico hacia el mundo de la moda. Con un enfoque en la ropa y accesorios, nuestra plataforma ofrece a los entusiastas de la moda una experiencia única de intercambio, descubrimiento y estilo."
+            android:textSize="16sp"/>
+
+        <!-- Botón de menú -->
+        <Button
+            android:id="@+id/button4"
+            style="@style/AppButtonStyle"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MENÚ"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <!-- Contenedor para las imágenes -->
+    <LinearLayout
+        android:id="@+id/imageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/textContainer"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <!-- Primera imagen -->
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/image1"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Segunda imagen -->
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/image2"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Tercera imagen -->
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/image3"
+            android:scaleType="centerCrop"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

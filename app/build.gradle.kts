@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id ("androidx.navigation.safeargs.kotlin")
+
 }
 
 android {
@@ -40,6 +42,44 @@ android {
 
 dependencies {
     val nav_version="2.7.0"
+    implementation ("com.google.android.material:material:1.8.0")
+    // Preferences DataStore (SharedPreferences like APIs)
+    dependencies {
+        implementation("androidx.datastore:datastore-preferences:1.0.0")
+
+        implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
+        // optional - RxJava2 support
+        implementation("androidx.datastore:datastore-preferences-rxjava2:1.0.0")
+
+        // optional - RxJava3 support
+        implementation("androidx.datastore:datastore-preferences-rxjava3:1.0.0")
+    }
+
+    // Alternatively - use the following artifact without an Android dependency.
+    dependencies {
+        implementation("androidx.datastore:datastore-preferences-core:1.0.0")
+    }
+
+
+    // Typed DataStore (Typed API surface, such as Proto)
+    dependencies {
+        implementation("androidx.datastore:datastore:1.0.0")
+
+        // optional - RxJava2 support
+        implementation("androidx.datastore:datastore-rxjava2:1.0.0")
+
+        // optional - RxJava3 support
+        implementation("androidx.datastore:datastore-rxjava3:1.0.0")
+    }
+
+    // Alternatively - use the following artifact without an Android dependency.
+    dependencies {
+        implementation("androidx.datastore:datastore-core:1.0.0")
+    }
+
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")

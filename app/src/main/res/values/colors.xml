@@ -4,6 +4,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#2196F3</color>
     <color name="purple">#673AB7</color>
+
+    <!-- Modo estandar -->
     <color name="md_theme_primary">#874B6C</color>
     <color name="md_theme_onPrimary">#FFFFFF</color>
     <color name="md_theme_primaryContainer">#FFD8E9</color>
@@ -98,6 +100,8 @@
     <color name="md_theme_surfaceContainer_mediumContrast">#F9EAEF</color>
     <color name="md_theme_surfaceContainerHigh_mediumContrast">#F3E4E9</color>
     <color name="md_theme_surfaceContainerHighest_mediumContrast">#EEDFE3</color>
+
+    <!-- Modo oscuro -->
     <color name="md_theme_primary_highContrast">#400E2D</color>
     <color name="md_theme_onPrimary_highContrast">#FFFFFF</color>
     <color name="md_theme_primaryContainer_highContrast">#67304F</color>
@@ -145,4 +149,5 @@
     <color name="md_theme_surfaceContainer_highContrast">#F9EAEF</color>
     <color name="md_theme_surfaceContainerHigh_highContrast">#F3E4E9</color>
     <color name="md_theme_surfaceContainerHighest_highContrast">#EEDFE3</color>
+
 </resources>

@@ -5,23 +5,36 @@ import android.os.Bundle
 import android.view.View
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.NavigationUI
+import androidx.navigation.ui.setupWithNavController
+import com.example.threadexchange.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        // Inicializar vistas y manejar eventos aquí
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.navHostFragment) as NavHostFragment
+        val navController = navHostFragment.navController
+
+        navController.addOnDestinationChangedListener { _, destination, _  ->
+            if(destination.id == R.id.login2Fragment) {
+                binding.bottomNav.visibility = View.GONE
+            } else {
+                binding.bottomNav.visibility = View.VISIBLE
+            }
+        }
+        setContentView( binding.root)
+        binding.bottomNav.setupWithNavController(navController)
+        NavigationUI.setupActionBarWithNavController(this, navController)
     }
-
-    fun goToCreditActivity(view: View) {
-        //crear el intent
-        val intent = Intent(this@MainActivity, CreditActivity::class.java)
-        //tomar el valor del cuadro de texto.
-        val etNombre = this.findViewById<EditText>(R.id.editText)
-        intent.putExtra("nombre", etNombre.text.toString())
-        //iniciar la nueva actividad
-        startActivity(intent)
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = this.findNavController(R.id.navHostFragment)
+        return navController.navigateUp()
     }
 }

@@ -28,11 +28,14 @@ class MenuFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         _binding = FragmentMenuBinding.inflate(inflater,container, false)
-        binding.button5.setOnClickListener(){
+        binding.btnSalir.setOnClickListener(){
             findNavController().navigate(R.id.action_menuFragment_to_login2Fragment5)
         }
-        binding.button4.setOnClickListener(){
+        binding.btnCreditos.setOnClickListener(){
             findNavController().navigate(R.id.action_menuFragment_to_creditFragment)
+        }
+        binding.btnLista.setOnClickListener {
+            findNavController().navigate(R.id.action_menuFragment_to_recyclerFragment)
         }
         return binding.root
     }

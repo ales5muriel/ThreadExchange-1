@@ -1,4 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name=""
+    <!-- Estilo para textos -->
+    <style name="AppTextStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">#FF0000</item> <!-- Color del texto -->
+        <item name="android:textSize">16sp</item> <!-- Tamaño del texto -->
+    </style>
+
+    <!-- Estilo para títulos -->
+    <style name="AppTitleStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">#0000FF</item> <!-- Color del título -->
+        <item name="android:textSize">20sp</item> <!-- Tamaño del título -->
+        <item name="android:textStyle">bold</item> <!-- Estilo del texto (negrita) -->
+    </style>
+
+    <!-- Estilo para botones -->
+    <style name="AppButtonStyle" parent="android:Widget.Button">
+        <item name="android:background">#9C27B0</item> <!-- Color de fondo del botón -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:backgroundTint">#6200EE</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+        <!-- Estilo para los botones -->
+
+
 </resources>

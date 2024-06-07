@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.threadexchange.databinding.FragmentCreditBinding
-import com.example.threadexchange.databinding.FragmentMenuBinding
 
 
 class CreditFragment : Fragment() {

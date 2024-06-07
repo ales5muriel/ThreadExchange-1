@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="navHostFragment" type="id" />
+    <item name="login2Fragment" type="id" />
+    <item name="recyclerRopa" type="id" />
+</resources>

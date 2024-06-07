@@ -4,7 +4,27 @@
     <string name="bienvenida">¡Bienvenido a ThreadExchange!</string>
     <string name="creditos">Iniciar</string>
     <string name="info">%s, estás usando la versión 1 de ThreadExchange</string>
-    <string name="contenido">En esta version se ha añadido un boton de contacto con el desarrollador para los problemas encontrados"</string>
+    <string name="contenido">En esta version se ha añadido un boton de contacto con el desarrollador."</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Ropa" />
+    <string name="item_list_title"> Ropa </string>
+    <string name="salir"> Salir </string>
+    <string name="Descripcion"> Descripcion </string>
+    <string name="textoCP"> Durante más de 50 años, la marca ha seguido encabezando la hibridación insignia de modelos de archivo militares, de trabajo y deportivos, combinándolos con la innovación textil italiana. </string>
+    <string name="item_list_fav"> Prendas y Articulos Favoritos </string>
+    <string name="Creditos">Ir a creditos</string>
+    <string name="Prendas">Prendas</string>
+    <string name="movil">movil</string>
+    <string name="marca">marca</string>
+    <string name="tamano">Tamaño</string>
+    <string name="volver">Volver</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="lista">Lista</string>
+    <string name="detalles">Detalles</string>
+    <string name="NombreUsuario">Nombre de usuario: Alejandro Morcillo</string>
+    <string name="Text">La lista de favoritos está vacía</string>
+    <string name="user_info_title">Información Usuario</string>
+    <string name="Favoritos">Favoritos</string>
+    <string name="Usuarios">Usuarios</string>
 </resources>
